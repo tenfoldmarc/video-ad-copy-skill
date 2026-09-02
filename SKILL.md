@@ -114,6 +114,16 @@ Never store API keys in either file.
 
 If the profile has no "Video preferences" section (it was made by /ad-copy), ask the two video questions once and add the section.
 
+### Step 0b: Find their video tools (do this for them)
+
+Before asking "which AI video tool," scan the tools available in this Claude session for video generation connectors. Names to look for: `generate_video`, `seedance`, `kling`, `veo`, `sora`, `arcads`, `higgsfield`, `heygen`, `runway`, `fal`, `replicate`. Also check the shell env and `~/.claude/ad-profiles/.env` for `ARCADS_API_KEY`, `HIGGSFIELD_API_KEY`, `FAL_KEY`.
+
+Tell them what you found in a line or two, and recommend a default: Seedance 2.5 for shot lists (best multi-shot continuity and lip-sync), Arcads or HeyGen for AI avatar scripts. Save it under Video preferences. If nothing is found, ask if they have a subscription or key to any of these, and offer to help connect it. If not, the skill still works: it writes scripts and shot lists they can paste into any tool.
+
+When a connector is present and the user wants the video made, offer at the end: "Want me to send this shot list to [connector] and generate it?" Only do so when they say yes.
+
+Never ask for a key in chat. Never write a key into the skill folder.
+
 ---
 
 ## Step 1: What is this video for?

@@ -10,7 +10,8 @@ It knows your business after one short interview, and that profile is shared wit
 ## What It Does
 
 1. First run only: a short interview, one question at a time. Skip anything. Saved as a profile so you never explain your business again. If you already ran `/ad-copy`, it skips this.
-2. Asks what today's video is for, the format (talking head, UGC, AI avatar, or AI shot list), and whether the traffic is cold, warm, or hot.
+2. Looks at what video tools you already have connected to Claude (Arcads, Higgsfield, HeyGen, fal, and others) and sets a default. Nothing connected? It still writes everything; you paste it into whatever tool you use.
+3. Asks what today's video is for, the format (talking head, UGC, AI avatar, or AI shot list), and whether the traffic is cold, warm, or hot.
 3. Picks two different frameworks (PAS, UGC story, founder to camera, mini VSL, and 7 more) so you test real angles.
 4. Writes 5 to 10 hooks of different types and marks the top 3, each with its first-frame text.
 5. Writes the full script with timestamps, on-screen text, and visual changes every 3 to 5 seconds.
